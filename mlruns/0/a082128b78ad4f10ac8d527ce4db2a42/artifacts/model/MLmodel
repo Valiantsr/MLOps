@@ -1,0 +1,33 @@
+artifact_path: model
+flavors:
+  python_function:
+    artifacts:
+      config:
+        path: artifacts\config.json
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\config.json
+      model_file:
+        path: artifacts\model.safetensors
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\model.safetensors
+      special_tokens_map:
+        path: artifacts\special_tokens_map.json
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\special_tokens_map.json
+      tokenizer_config:
+        path: artifacts\tokenizer_config.json
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\tokenizer_config.json
+      vocab:
+        path: artifacts\vocab.txt
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\vocab.txt
+    cloudpickle_version: 3.0.0
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.11.5
+    streamable: false
+mlflow_version: 2.15.0
+model_size_bytes: 70981826
+model_uuid: 569fedbfa4ca4a68a889d5acba768cda
+run_id: a082128b78ad4f10ac8d527ce4db2a42
+utc_time_created: '2024-08-06 08:17:04.781566'

@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/mlruns/0/a4026db338d2450fa3b41d2a98ec90ce/artifacts
+deleted_time: 1722935271689
+end_time: 1722924766136
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: a4026db338d2450fa3b41d2a98ec90ce
+run_name: mercurial-deer-64
+run_uuid: a4026db338d2450fa3b41d2a98ec90ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722924749223
+status: 3
+tags: []
+user_id: Valiant

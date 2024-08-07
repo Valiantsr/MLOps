@@ -1,0 +1,42 @@
+artifact_path: model
+flavors:
+  python_function:
+    artifacts:
+      config:
+        path: artifacts\config.json
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\config.json
+      model_file:
+        path: artifacts\model.safetensors
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\model.safetensors
+      special_tokens_map:
+        path: artifacts\special_tokens_map.json
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\special_tokens_map.json
+      tokenizer_config:
+        path: artifacts\tokenizer_config.json
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\tokenizer_config.json
+      vocab:
+        path: artifacts\vocab.txt
+        uri: D:\S2\SMT 3\KP\MLOps\sent_statement_llp2_240724_acc85\vocab.txt
+    cloudpickle_version: 3.0.0
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.11.5
+    streamable: false
+mlflow_version: 2.15.0
+model_size_bytes: 71268977
+model_uuid: b37195df427b475d8883a398e27410ce
+run_id: f67aecdbb52644779bbbb94595e017bf
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_payload.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "text", "required": true}]'
+  outputs: '[{"type": "string", "required": true}]'
+  params: null
+utc_time_created: '2024-08-06 08:20:10.479718'

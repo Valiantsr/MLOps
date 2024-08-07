@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/mlruns/0/d1cfd9dbdd0b4125a33a00b93704c014/artifacts
+end_time: 1722997733218
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d1cfd9dbdd0b4125a33a00b93704c014
+run_name: calm-colt-97
+run_uuid: d1cfd9dbdd0b4125a33a00b93704c014
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722997719028
+status: 3
+tags: []
+user_id: Valiant

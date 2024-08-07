@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/mlruns/0/8f06c813ccc04b8abae28b27e043bc3a/artifacts
+deleted_time: 1722935271688
+end_time: 1722931835603
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 8f06c813ccc04b8abae28b27e043bc3a
+run_name: fortunate-panda-450
+run_uuid: 8f06c813ccc04b8abae28b27e043bc3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722931835551
+status: 4
+tags: []
+user_id: Valiant

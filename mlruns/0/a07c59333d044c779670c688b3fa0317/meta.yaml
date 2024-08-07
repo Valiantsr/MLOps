@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/mlruns/0/a07c59333d044c779670c688b3fa0317/artifacts
+deleted_time: 1722925531934
+end_time: 1722924586412
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: a07c59333d044c779670c688b3fa0317
+run_name: nervous-vole-553
+run_uuid: a07c59333d044c779670c688b3fa0317
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722924586172
+status: 4
+tags: []
+user_id: Valiant

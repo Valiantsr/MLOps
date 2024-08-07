@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/mlruns/0/b7d35d9d2c9c4da9a75121f72dbea3b2/artifacts
+deleted_time: 1722935271691
+end_time: 1722931902102
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: b7d35d9d2c9c4da9a75121f72dbea3b2
+run_name: learned-robin-841
+run_uuid: b7d35d9d2c9c4da9a75121f72dbea3b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722931897010
+status: 3
+tags: []
+user_id: Valiant

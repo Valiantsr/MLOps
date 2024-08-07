@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/mlruns/0/a082128b78ad4f10ac8d527ce4db2a42/artifacts
+deleted_time: 1722935271687
+end_time: 1722932229525
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: a082128b78ad4f10ac8d527ce4db2a42
+run_name: nervous-mule-443
+run_uuid: a082128b78ad4f10ac8d527ce4db2a42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722932224690
+status: 3
+tags: []
+user_id: Valiant

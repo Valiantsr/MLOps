@@ -1,0 +1,15 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "text"
+    ],
+    "data": [
+      [
+        "I love this product!"
+      ],
+      [
+        "This is the worst experience I've ever had."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/S2/SMT%203/KP/MLOps/scripts/mlruns/0/440a1ff36f544256ba6e4e5798734d2b/artifacts
+end_time: 1722997277554
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 440a1ff36f544256ba6e4e5798734d2b
+run_name: polite-eel-123
+run_uuid: 440a1ff36f544256ba6e4e5798734d2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722997277486
+status: 4
+tags: []
+user_id: Valiant
