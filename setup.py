@@ -9,6 +9,7 @@ setup(
         "pandas",
         "transformers",
         "safetensors",
-        "torch"
+        "torch",
+        "pytest"
     ],
 )
