@@ -3,3 +3,4 @@ pandas
 transformers
 safetensors
 torch
+pytest
