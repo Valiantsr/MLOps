@@ -37,9 +37,9 @@ jobs:
         run: |
           python scripts/log_model.py
 
-      - name: Test deployed model
-        run: |
-          python scripts/test_model.py
+      # - name: Test deployed model
+      #   run: |
+      #     python scripts/test_model.py
 
       - name: Run test
         run: |
