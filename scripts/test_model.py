@@ -11,14 +11,17 @@ def test_load_model_from_mlflow():
     assert model is not None, "Model should be loaded successfully"
 
 def test_predict():
-    # Mock model and prediction
-    class MockModel:
-        def predict(self, df):
-            return ["positive" if "love" in text else "negative" for text in df["text"]]
-
-    model = MockModel()
+    # Muat model dari MLflow menggunakan run_id
+    model = load_model_from_mlflow(test_run_id)
+    assert model is not None, "Model should be loaded successfully"
+    
+    # Data input untuk prediksi
     input_data = ["I love this product!", "This is the worst experience I've ever had.", "It was okay, nothing special."]
     
+    # Lakukan prediksi menggunakan model yang sebenarnya
     predictions = predict(model, input_data)
     
-    assert predictions == ["positive", "negative", "negative"], "Predictions should match expected results"
+    # Ubah prediksi sesuai dengan format atau skala yang digunakan model Anda
+    # Asumsikan model mengembalikan label sentimen seperti "positive", "negative", "neutral"
+    
+    assert predictions == ["positive", "negative", "neutral"], "Predictions should match expected results"
