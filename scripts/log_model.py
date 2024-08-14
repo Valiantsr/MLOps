@@ -30,7 +30,7 @@ class CustomSentimentModel(mlflow.pyfunc.PythonModel):
         return [labels[pred] for pred in predictions]
 
 # Contoh input untuk model
-input_example = pd.DataFrame({"text": ["I love this product!", "This is the worst experience I've ever had."]})
+input_example = pd.DataFrame({"text": ["Aku suka produk ini", "Ini merupakan ayanan yang buruk"]})
 
 # Log the custom model
 with mlflow.start_run() as run:
