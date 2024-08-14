@@ -13,6 +13,13 @@ def test_mlflow_connection():
         assert len(experiments) > 0, "No experiments found, check MLFLOW_TRACKING_URI"
     except Exception as e:
         assert False, f"Failed to connect to MLflow: {e}"
+
+def test_load_model_from_mlflow():
+    try:
+        model = load_model_from_mlflow(test_run_id)
+        assert model is not None, "Model should be loaded successfully"
+    except Exception as e:
+        assert False, f"Error loading model: {e}"
         
 def test_load_model_from_mlflow():
     model = load_model_from_mlflow(test_run_id)
