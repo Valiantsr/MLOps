@@ -4,7 +4,7 @@ import pandas as pd
 from model import load_model_from_mlflow, predict
 
 # Dummy run ID for testing
-test_run_id = "6e7c945be8c645278bc2dfda769b06ea"
+test_run_id = "2cbcbf52aaa743d280b3cf7e6731c7eb"
 
 def test_mlflow_connection():
     try:
