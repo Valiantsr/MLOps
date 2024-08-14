@@ -6,6 +6,8 @@ import pandas as pd
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
 
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+
 class CustomSentimentModel(mlflow.pyfunc.PythonModel):
 
     def load_context(self, context):
