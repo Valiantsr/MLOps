@@ -51,7 +51,7 @@ def load_model_from_mlflow(run_id=None):
 def list_available_runs():
     client = MlflowClient()
     logger.info("Available runs:")
-    for run in client.search_runs(experiment_ids=['1']):  # Ganti '1' dengan ID eksperimen Anda
+    for run in client.search_runs(experiment_ids=['0']):  # Ganti '1' dengan ID eksperimen Anda
         logger.info(f"Run ID: {run.info.run_id}, Status: {run.info.status}")
 
 def predict(model, input_data):
