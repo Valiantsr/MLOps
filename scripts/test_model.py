@@ -30,7 +30,7 @@ def load_model_from_mlflow(run_id=None):
     if not run_id:
         logger.warning("MLFLOW_RUN_ID not set. Attempting to fetch latest run.")
         client = MlflowClient()
-        runs = client.search_runs(experiment_ids=['1'])  # Ganti '1' dengan ID eksperimen Anda
+        runs = client.search_runs(experiment_ids=['0'])  # Ganti '1' dengan ID eksperimen Anda
         if runs:
             run_id = runs[0].info.run_id
             logger.info(f"Using latest run ID: {run_id}")
