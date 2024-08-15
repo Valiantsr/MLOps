@@ -36,11 +36,14 @@ jobs:
           # MLFLOW_TRACKING_TOKEN: ${{ secrets.MLFLOW_TRACKING_TOKEN }}
         run: |
           python scripts/log_model.py
+          echo "MLFLOW_RUN_ID=$(cat run_id.txt)" >> $GITHUB_ENV
+
+      - name: Check MLflow connection
+        run: |
+          python -c "import mlflow; print(mlflow.get_tracking_uri()); print(mlflow.list_experiments())"
 
       - name: Test deployed model
+        env:
+          MLFOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
         run: |
           python scripts/test_model.py
-
-      # - name: Run test
-      #   run: |
-      #     pytest
