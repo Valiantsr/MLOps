@@ -28,7 +28,14 @@ def load_model_from_mlflow(run_id=None):
         run_id = os.environ.get("MLFLOW_RUN_ID")
     
     if not run_id:
-        raise ValueError("MLFLOW_RUN_ID not set in environment variables and not provided as argument")
+        logger.warning("MLFLOW_RUN_ID not set. Attempting to fetch latest run.")
+        client = MlflowClient()
+        runs = client.search_runs(experiment_ids=['1'])  # Ganti '1' dengan ID eksperimen Anda
+        if runs:
+            run_id = runs[0].info.run_id
+            logger.info(f"Using latest run ID: {run_id}")
+        else:
+            raise ValueError("No runs found in the experiment")
     
     logger.info(f"Attempting to load model from run ID: {run_id}")
     
@@ -44,7 +51,7 @@ def load_model_from_mlflow(run_id=None):
 def list_available_runs():
     client = MlflowClient()
     logger.info("Available runs:")
-    for run in client.search_runs(experiment_ids=['1']):  # Ganti '1' dengan ID eksperimen Anda jika berbeda
+    for run in client.search_runs(experiment_ids=['1']):  # Ganti '1' dengan ID eksperimen Anda
         logger.info(f"Run ID: {run.info.run_id}, Status: {run.info.status}")
 
 def predict(model, input_data):
