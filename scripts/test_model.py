@@ -3,6 +3,8 @@ import mlflow.pyfunc
 import pandas as pd
 from model import load_model_from_mlflow, predict
 
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+
 # Run ID untuk testing
 test_run_id = "6e7c945be8c645278bc2dfda769b06ea"
 
